@@ -224,7 +224,7 @@ xtarget_list=(real_xtarget-Age_mu)/Age_sd;
 for(k in c(1:length(xtarget_list))){
   xtarget=xtarget_list[k];
   # wash data
-  set.seed(1093);
+  set.seed(23617);
   randat=dat[sample(1:N,N,replace=FALSE),]
   Y=randat[,1]; # Y is SBP
   X=t(as.matrix(randat[,3])); # X is AGE
